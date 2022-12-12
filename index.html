@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #border-div {
+            width: 80vw;
+            height: 80vh;
+            background-color: #bae3e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #draggable-div {
+            position: absolute;
+            width: 8rem;
+            height: 6.5rem;
+            background-color: coral;
+            z-index: 2;
+            border-radius: 1rem;
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="border-div">
+        <div id="draggable-div"></div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
