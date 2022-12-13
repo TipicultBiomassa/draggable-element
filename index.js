@@ -4,8 +4,8 @@ const borderDiv = document.getElementById("border-div");
 movableDiv.addEventListener('mousedown',pickup);
 movableDiv.addEventListener('touchstart',pickup);
 
-movableDiv.addEventListener('mousemove',move);
-movableDiv.addEventListener('touchmove',move);
+window.addEventListener('mousemove',move);
+window.addEventListener('touchmove',move);
 
 movableDiv.addEventListener('mouseup',drop);
 movableDiv.addEventListener('touchend',drop);
