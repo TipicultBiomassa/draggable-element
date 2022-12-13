@@ -28,7 +28,7 @@ function move(event) {
         let leftPrevious = draggableElement.style.left;
         let topPrevious = draggableElement.style.top;
         let offsetX, offsetY;
-        if (event.clientX) {
+        if (event.type === 'mousemove') {
             offsetX = event.clientX - draggableElement.clientWidth/2;
             offsetY = event.clientY - draggableElement.clientHeight/2;
         } else {
